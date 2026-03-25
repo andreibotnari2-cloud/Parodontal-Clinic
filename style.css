@@ -131,6 +131,7 @@ img{max-width:100%;display:block}
 
 /* ─── DOCTORS ─── */
 .doctors-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.doctors-grid--2{grid-template-columns:repeat(2,1fr);max-width:600px;margin:0 auto}
 .doc-card{background:var(--white);border:1px solid var(--border);border-radius:var(--r);padding:28px 18px;text-align:center;transition:box-shadow .25s,transform .25s}
 .doc-card:hover{box-shadow:0 8px 32px rgba(30,58,110,.1);transform:translateY(-4px)}
 .doc-avatar{width:76px;height:76px;border-radius:50%;background:linear-gradient(135deg,var(--primary),var(--blue));display:flex;align-items:center;justify-content:center;font-size:32px;margin:0 auto 14px;transition:transform .3s}
