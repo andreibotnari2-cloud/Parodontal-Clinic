@@ -11,7 +11,6 @@
 </head>
 <body>
 
-<!-- HEADER -->
 <header class="hdr">
   <div class="hdr-inner">
     <a href="index.html" class="logo">
@@ -29,13 +28,10 @@
       <a href="blog.html">Blog</a>
     </nav>
     <a href="tel:+37360000000" class="hdr-phone">📞 Programare</a>
-    <button class="hamburger" id="hamburger" aria-label="Meniu">
-      <span></span><span></span><span></span>
-    </button>
+    <button class="hamburger" id="hamburger" aria-label="Meniu"><span></span><span></span><span></span></button>
   </div>
 </header>
 
-<!-- MOBILE NAV -->
 <div class="mobile-nav" id="mobileNav">
   <a href="index.html" class="active">🏠 Acasă</a>
   <a href="terapie.html">🦷 Terapie</a>
@@ -45,7 +41,7 @@
   <a href="protetica.html">👑 Protetică</a>
   <a href="ortodontie.html">😬 Ortodonție</a>
   <a href="blog.html">📝 Blog</a>
-  <a href="tel:+37360000000" class="mob-phone">📞 Sună acum</a>
+  <a href="#" class="mob-phone open-book">📅 Programează-te</a>
 </div>
 
 <!-- HERO -->
@@ -56,75 +52,75 @@
       <h1>Zâmbetul tău,<br><em>grija noastră</em></h1>
       <p class="hero-sub">Tratament parodontal profesionist cu echipament de ultimă generație. Medici specializați, rezultate garantate.</p>
       <div class="hero-btns">
-        <a href="tel:+37360000000" class="btn-primary">📞 Programează-te acum</a>
+        <a href="#" class="btn-primary open-book">📅 Programează-te acum</a>
         <a href="#servicii" class="btn-outline">Vezi serviciile</a>
       </div>
       <div class="hero-stats">
         <div class="hstat">
-          <div class="hstat-num">10+</div>
+          <div class="hstat-num counter" data-target="10" data-suffix="+">10+</div>
           <div class="hstat-label">ani experiență</div>
         </div>
         <div class="hstat">
-          <div class="hstat-num">5000+</div>
+          <div class="hstat-num counter" data-target="5000" data-suffix="+">5000+</div>
           <div class="hstat-label">pacienți tratați</div>
         </div>
         <div class="hstat">
-          <div class="hstat-num">98%</div>
+          <div class="hstat-num counter" data-target="98" data-suffix="%">98%</div>
           <div class="hstat-label">satisfacție</div>
         </div>
         <div class="hstat">
-          <div class="hstat-num">6</div>
+          <div class="hstat-num counter" data-target="6" data-suffix="">6</div>
           <div class="hstat-label">specialități</div>
         </div>
       </div>
     </div>
     <div class="hero-img-wrap">
-      <div class="hero-img-box">🦷</div>
+      <img src="img-terapie.jpg" alt="Parodontal Clinic" class="hero-img-real" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+      <div class="hero-img-box" style="display:none">🦷</div>
     </div>
   </div>
 </section>
 
-<!-- PAGE -->
 <div class="page">
 
   <!-- SERVICII -->
   <section class="section" id="servicii">
-    <div class="section-head">
+    <div class="section-head anim">
       <h2 class="stitle">Serviciile <em>noastre</em></h2>
       <p class="sdesc">O gamă completă de tratamente stomatologice, adaptate nevoilor fiecărui pacient.</p>
     </div>
     <div class="services-grid">
-      <a href="terapie.html" class="srv-card">
+      <a href="terapie.html" class="srv-card anim delay-1">
         <div class="srv-icon">🦷</div>
         <div class="srv-name">Terapie dentară</div>
         <div class="srv-desc">Tratamentul cariei, devitalizări, obturații estetice și tratamente endodontice moderne.</div>
         <div class="srv-link">Află mai mult →</div>
       </a>
-      <a href="estetica.html" class="srv-card">
+      <a href="estetica.html" class="srv-card anim delay-2">
         <div class="srv-icon">✨</div>
         <div class="srv-name">Estetică dentară</div>
         <div class="srv-desc">Albire profesională, fațete ceramice, composite bonding pentru un zâmbet perfect.</div>
         <div class="srv-link">Află mai mult →</div>
       </a>
-      <a href="chirurgie.html" class="srv-card">
+      <a href="chirurgie.html" class="srv-card anim delay-3">
         <div class="srv-icon">🔬</div>
         <div class="srv-name">Chirurgie orală</div>
         <div class="srv-desc">Extracții, intervenții parodontale, chirurgie reconstructivă cu anestezie modernă.</div>
         <div class="srv-link">Află mai mult →</div>
       </a>
-      <a href="implantologie.html" class="srv-card">
+      <a href="implantologie.html" class="srv-card anim delay-1">
         <div class="srv-icon">🏥</div>
         <div class="srv-name">Implantologie</div>
-        <div class="srv-desc">Implanturi dentare de calitate premium, cu rată de succes de 98%. Soluție permanentă.</div>
+        <div class="srv-desc">Implanturi dentare premium, cu rată de succes de 98%. Soluție permanentă.</div>
         <div class="srv-link">Află mai mult →</div>
       </a>
-      <a href="protetica.html" class="srv-card">
+      <a href="protetica.html" class="srv-card anim delay-2">
         <div class="srv-icon">👑</div>
         <div class="srv-name">Protetică dentară</div>
         <div class="srv-desc">Coroane, punți, proteze totale și parțiale pentru funcționalitate și estetică optimă.</div>
         <div class="srv-link">Află mai mult →</div>
       </a>
-      <a href="ortodontie.html" class="srv-card">
+      <a href="ortodontie.html" class="srv-card anim delay-3">
         <div class="srv-icon">😬</div>
         <div class="srv-name">Ortodonție</div>
         <div class="srv-desc">Aparate fixe, alinere invizibile Invisalign, tratamente pentru adulți și copii.</div>
@@ -133,29 +129,42 @@
     </div>
   </section>
 
+  <!-- PHOTO SECTION 1 -->
+  <div class="photo-section anim">
+    <div class="photo-wrap">
+      <img src="img-terapie.jpg" alt="Tratament dentar" onerror="this.parentElement.style.background='linear-gradient(135deg,#1E3A6E,#2B7DC8)';this.style.display='none'">
+    </div>
+    <div class="photo-content">
+      <h2>Clinică <em>modernă</em> în Chișinău</h2>
+      <p>Parodontal Clinic dispune de echipamente de ultimă generație — radiografie 3D, laser dentar, sisteme CAD/CAM pentru restaurări în aceeași zi.</p>
+      <p>Fiecare cabinet este sterilizat complet între pacienți, respectând cele mai înalte standarde europene de igienă.</p>
+      <a href="#" class="btn-primary open-book">Programează consultație gratuită</a>
+    </div>
+  </div>
+
   <!-- DE CE NOI -->
   <section class="section">
-    <div class="section-head center">
+    <div class="section-head center anim">
       <h2 class="stitle">De ce să ne <em>alegi</em></h2>
       <p class="sdesc">Suntem angajați să oferim îngrijire dentară de cea mai înaltă calitate.</p>
     </div>
     <div class="why-grid">
-      <div class="why-card">
+      <div class="why-card anim delay-1">
         <div class="why-icon">🏆</div>
         <div class="why-title">Medici certificați</div>
         <div class="why-desc">Echipa noastră deține specializări internaționale din România, Germania și Italia.</div>
       </div>
-      <div class="why-card">
+      <div class="why-card anim delay-2">
         <div class="why-icon">⚡</div>
         <div class="why-title">Tehnologie modernă</div>
         <div class="why-desc">Radiografie 3D, laser dentar, sterilizare completă după fiecare consultație.</div>
       </div>
-      <div class="why-card">
+      <div class="why-card anim delay-3">
         <div class="why-icon">💰</div>
         <div class="why-title">Prețuri transparente</div>
         <div class="why-desc">Deviz complet înainte de tratament. Nicio taxă ascunsă, nicio surpriză.</div>
       </div>
-      <div class="why-card">
+      <div class="why-card anim delay-4">
         <div class="why-icon">😌</div>
         <div class="why-title">Tratament fără durere</div>
         <div class="why-desc">Anestezie modernă și sedare pentru pacienții anxioși. Confort maxim garantat.</div>
@@ -165,30 +174,30 @@
 
   <!-- MEDICI -->
   <section class="section">
-    <div class="section-head">
+    <div class="section-head anim">
       <h2 class="stitle">Medicii <em>noștri</em></h2>
       <p class="sdesc">Profesioniști cu experiență dedicați sănătății tale dentare.</p>
     </div>
     <div class="doctors-grid">
-      <div class="doc-card">
+      <div class="doc-card anim delay-1">
         <div class="doc-avatar">👩‍⚕️</div>
         <div class="doc-name">Dr. Ana Rusu</div>
         <div class="doc-spec">Parodontologie</div>
         <div class="doc-exp">12 ani experiență</div>
       </div>
-      <div class="doc-card">
+      <div class="doc-card anim delay-2">
         <div class="doc-avatar">👨‍⚕️</div>
         <div class="doc-name">Dr. Ion Moraru</div>
         <div class="doc-spec">Implantologie</div>
         <div class="doc-exp">9 ani experiență</div>
       </div>
-      <div class="doc-card">
+      <div class="doc-card anim delay-3">
         <div class="doc-avatar">👩‍⚕️</div>
         <div class="doc-name">Dr. Maria Cojocaru</div>
         <div class="doc-spec">Ortodonție</div>
         <div class="doc-exp">8 ani experiență</div>
       </div>
-      <div class="doc-card">
+      <div class="doc-card anim delay-4">
         <div class="doc-avatar">👨‍⚕️</div>
         <div class="doc-name">Dr. Vasile Popa</div>
         <div class="doc-spec">Chirurgie orală</div>
@@ -199,22 +208,22 @@
 
   <!-- RECENZII -->
   <section class="section">
-    <div class="section-head center">
+    <div class="section-head center anim">
       <h2 class="stitle">Ce spun <em>pacienții</em></h2>
       <p class="sdesc">Peste 5000 de pacienți mulțumiți în Chișinău și Moldova.</p>
     </div>
     <div class="reviews-grid">
-      <div class="review-card">
+      <div class="review-card anim delay-1">
         <div class="review-stars">★★★★★</div>
         <div class="review-text">„Am venit cu frică, am plecat cu zâmbetul pe buze. Dr. Ana este extraordinară — profesionistă și foarte atentă la detalii."</div>
         <div class="review-author">— Cristina M., Chișinău</div>
       </div>
-      <div class="review-card">
+      <div class="review-card anim delay-2">
         <div class="review-stars">★★★★★</div>
         <div class="review-text">„Am făcut implant dentar și sunt extrem de mulțumit. Procedura a fost nedureroasă, rezultatul perfect. 6 luni mai târziu — totul impecabil."</div>
         <div class="review-author">— Alexandru T., Chișinău</div>
       </div>
-      <div class="review-card">
+      <div class="review-card anim delay-3">
         <div class="review-stars">★★★★★</div>
         <div class="review-text">„Cel mai bun cabinet stomatologic din Chișinău. Igienă impecabilă, personal amabil, rezultate excelente. Recomand cu toată inima!"</div>
         <div class="review-author">— Elena V., Bălți</div>
@@ -223,12 +232,12 @@
   </section>
 
   <!-- CTA -->
-  <div class="cta-banner">
+  <div class="cta-banner anim">
     <div class="cta-text">
       <h2>Programează-te astăzi</h2>
       <p>Consultație gratuită · Luni–Sâmbătă 09:00–19:00 · Chișinău</p>
     </div>
-    <a href="tel:+37360000000" class="btn-white">📞 Sună acum</a>
+    <a href="#" class="btn-white open-book">📅 Programează-te acum</a>
   </div>
 
 </div>
@@ -255,10 +264,8 @@
       </div>
       <div class="footer-col">
         <h4>Clinica</h4>
-        <a href="index.html">Despre noi</a>
+        <a href="index.html">Acasă</a>
         <a href="blog.html">Blog</a>
-        <a href="#">Prețuri</a>
-        <a href="#">Galerie</a>
         <a href="#">Contact</a>
       </div>
       <div class="footer-col">
@@ -276,19 +283,55 @@
   </div>
 </footer>
 
-<script>
-const ham = document.getElementById('hamburger');
-const mob = document.getElementById('mobileNav');
-ham.addEventListener('click', () => {
-  ham.classList.toggle('open');
-  mob.classList.toggle('open');
-  document.body.style.overflow = mob.classList.contains('open') ? 'hidden' : '';
-});
-mob.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
-  ham.classList.remove('open');
-  mob.classList.remove('open');
-  document.body.style.overflow = '';
-}));
-</script>
+<!-- FLOATING BOOK BUTTON -->
+<button class="book-float" id="bookBtn">📅 Programează-te</button>
+
+<!-- BOOKING MODAL -->
+<div class="modal" id="bookModal">
+  <div class="modal-overlay" id="bookOverlay"></div>
+  <div class="modal-box">
+    <button class="modal-close" id="bookClose">✕</button>
+    <div class="modal-title">Programare online</div>
+    <div class="modal-sub">Completează formularul și te contactăm în cel mai scurt timp.</div>
+    <form id="bookForm">
+      <div class="form-row">
+        <div class="form-group">
+          <label>Nume *</label>
+          <input type="text" placeholder="Ion Popescu" required>
+        </div>
+        <div class="form-group">
+          <label>Telefon *</label>
+          <input type="tel" placeholder="+373 6XX XXX XXX" required>
+        </div>
+      </div>
+      <div class="form-group">
+        <label>Serviciu dorit</label>
+        <select>
+          <option value="">— Selectează serviciul —</option>
+          <option>Consultație gratuită</option>
+          <option>Terapie dentară</option>
+          <option>Estetică dentară / Albire</option>
+          <option>Chirurgie orală</option>
+          <option>Implantologie</option>
+          <option>Protetică dentară</option>
+          <option>Ortodonție</option>
+          <option>Igienă profesională</option>
+          <option>Altul</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label>Data preferată</label>
+        <input type="date">
+      </div>
+      <div class="form-group">
+        <label>Mesaj (opțional)</label>
+        <textarea placeholder="Descrie pe scurt problema sau întrebarea ta..."></textarea>
+      </div>
+      <button type="submit" class="form-submit">Trimite cererea →</button>
+    </form>
+  </div>
+</div>
+
+<script src="app.js"></script>
 </body>
 </html>

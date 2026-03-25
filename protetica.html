@@ -42,32 +42,32 @@
 
 <div class="page">
   <div class="treatment-grid">
-    <div class="treatment-card">
+    <div class="treatment-card anim">
       <div class="treatment-top"><div class="t-icon">👑</div><div class="t-name">Coroană ceramică / zirconiu</div></div>
       <div class="treatment-body"><p>Coroane din ceramică integrală sau zirconiu pentru rezistență și estetică maximă. Aspect natural, biocompatibilitate totală, durabilitate de peste 15 ani.</p><div class="treatment-price">de la 3500 lei / coroană</div></div>
     </div>
-    <div class="treatment-card">
+    <div class="treatment-card anim">
       <div class="treatment-top"><div class="t-icon">🌉</div><div class="t-name">Punte dentară</div></div>
       <div class="treatment-body"><p>Înlocuirea unuia sau mai multor dinți lipsă prin punte fixă pe dinții vecini. Soluție rapidă, confortabilă și cu aspect natural.</p><div class="treatment-price">de la 8000 lei / punte 3 unități</div></div>
     </div>
-    <div class="treatment-card">
+    <div class="treatment-card anim">
       <div class="treatment-top"><div class="t-icon">🦷</div><div class="t-name">Proteză parțială mobilă</div></div>
       <div class="treatment-body"><p>Proteză scheletată sau acrilică pentru înlocuirea mai multor dinți lipsă. Confort optim, estetică bună și preț accesibil.</p><div class="treatment-price">de la 5000 lei</div></div>
     </div>
-    <div class="treatment-card">
+    <div class="treatment-card anim">
       <div class="treatment-top"><div class="t-icon">😊</div><div class="t-name">Proteză totală</div></div>
       <div class="treatment-body"><p>Proteze totale acrilice sau pe bază de nailon pentru edentați complet. Adaptare rapidă, stabilitate bună și aspect natural al zâmbetului.</p><div class="treatment-price">de la 7000 lei / arcadă</div></div>
     </div>
-    <div class="treatment-card">
+    <div class="treatment-card anim">
       <div class="treatment-top"><div class="t-icon">🔩</div><div class="t-name">Inlay / Onlay ceramic</div></div>
       <div class="treatment-body"><p>Restaurări indirecte din ceramică sau compozit CAD/CAM pentru distrugerile coronare mari. Alternativă conservatoare la coroană.</p><div class="treatment-price">de la 2800 lei</div></div>
     </div>
-    <div class="treatment-card">
+    <div class="treatment-card anim">
       <div class="treatment-top"><div class="t-icon">🔧</div><div class="t-name">Coroană provizorie</div></div>
       <div class="treatment-body"><p>Coroane provizorii estetice pe durata tratamentului. Protejează dintele șlefuit și mențin estetica zâmbetului pe parcursul fabricării restaurării finale.</p><div class="treatment-price">de la 500 lei</div></div>
     </div>
   </div>
-  <div class="cta-banner">
+  <div class="cta-banner anim">
     <div class="cta-text"><h2>Restaurează-ți zâmbetul</h2><p>Consultație gratuită cu plan de tratament detaliat · Programează-te</p></div>
     <a href="tel:+37360000000" class="btn-white">📞 Sună acum</a>
   </div>
@@ -84,6 +84,56 @@
     <div class="footer-bottom"><span>© 2026 <strong>Parodontal Clinic</strong>. Toate drepturile rezervate.</span></div>
   </div>
 </footer>
-<script>const ham=document.getElementById('hamburger'),mob=document.getElementById('mobileNav');ham.addEventListener('click',()=>{ham.classList.toggle('open');mob.classList.toggle('open');document.body.style.overflow=mob.classList.contains('open')?'hidden':'';});mob.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{ham.classList.remove('open');mob.classList.remove('open');document.body.style.overflow='';}));</script>
+
+<!-- FLOATING BOOK BUTTON -->
+<button class="book-float" id="bookBtn">📅 Programează-te</button>
+
+<!-- BOOKING MODAL -->
+<div class="modal" id="bookModal">
+  <div class="modal-overlay" id="bookOverlay"></div>
+  <div class="modal-box">
+    <button class="modal-close" id="bookClose">✕</button>
+    <div class="modal-title">Programare online</div>
+    <div class="modal-sub">Completează formularul și te contactăm în cel mai scurt timp.</div>
+    <form id="bookForm">
+      <div class="form-row">
+        <div class="form-group">
+          <label>Nume *</label>
+          <input type="text" placeholder="Ion Popescu" required>
+        </div>
+        <div class="form-group">
+          <label>Telefon *</label>
+          <input type="tel" placeholder="+373 6XX XXX XXX" required>
+        </div>
+      </div>
+      <div class="form-group">
+        <label>Serviciu dorit</label>
+        <select>
+          <option value="">— Selectează serviciul —</option>
+          <option>Consultație gratuită</option>
+          <option>Terapie dentară</option>
+          <option>Estetică dentară / Albire</option>
+          <option>Chirurgie orală</option>
+          <option>Implantologie</option>
+          <option>Protetică dentară</option>
+          <option>Ortodonție</option>
+          <option>Igienă profesională</option>
+          <option>Altul</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label>Data preferată</label>
+        <input type="date">
+      </div>
+      <div class="form-group">
+        <label>Mesaj (opțional)</label>
+        <textarea placeholder="Descrie pe scurt problema sau întrebarea ta..."></textarea>
+      </div>
+      <button type="submit" class="form-submit">Trimite cererea →</button>
+    </form>
+  </div>
+</div>
+
+<script src="app.js"></script>
 </body>
 </html>

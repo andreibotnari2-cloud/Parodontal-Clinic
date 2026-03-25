@@ -42,32 +42,32 @@
 
 <div class="page">
   <div class="treatment-grid">
-    <div class="treatment-card">
+    <div class="treatment-card anim">
       <div class="treatment-top"><div class="t-icon">😬</div><div class="t-name">Aparat dentar fix metalic</div></div>
       <div class="treatment-body"><p>Aparat fix cu brackets metalice — soluția clasică, eficientă și accesibilă. Rezultate excelente pentru maloccluzii moderate și severe la orice vârstă.</p><div class="treatment-price">de la 15000 lei / arcadă</div></div>
     </div>
-    <div class="treatment-card">
+    <div class="treatment-card anim">
       <div class="treatment-top"><div class="t-icon">✨</div><div class="t-name">Aparat ceramic (estetic)</div></div>
       <div class="treatment-body"><p>Brackets ceramice transparente, aproape invizibile. Aceeași eficiență ca aparatul metalic, dar mult mai discretă pentru adulții care vor estetică.</p><div class="treatment-price">de la 20000 lei / arcadă</div></div>
     </div>
-    <div class="treatment-card">
+    <div class="treatment-card anim">
       <div class="treatment-top"><div class="t-icon">🔮</div><div class="t-name">Alinere invizibile (Invisalign)</div></div>
       <div class="treatment-body"><p>Gutiere transparente schimbate la fiecare 2 săptămâni. Complet detașabile, fără restricții alimentare, aproape invizibile — soluția preferată de adulți.</p><div class="treatment-price">de la 25000 lei</div></div>
     </div>
-    <div class="treatment-card">
+    <div class="treatment-card anim">
       <div class="treatment-top"><div class="t-icon">👶</div><div class="t-name">Ortodonție pediatrică</div></div>
       <div class="treatment-body"><p>Tratament interceptiv pentru copii (6–12 ani). Gutiere funcționale, expansoare palatine — ghidarea creșterii osoase în momentul optim.</p><div class="treatment-price">de la 8000 lei</div></div>
     </div>
-    <div class="treatment-card">
+    <div class="treatment-card anim">
       <div class="treatment-top"><div class="t-icon">🔧</div><div class="t-name">Retainer de contenție</div></div>
       <div class="treatment-body"><p>Menținerea rezultatelor după tratamentul ortodontic. Retainer fix lipit sau gutieră de contenție pentru stabilitatea pe termen lung.</p><div class="treatment-price">de la 1500 lei</div></div>
     </div>
-    <div class="treatment-card">
+    <div class="treatment-card anim">
       <div class="treatment-top"><div class="t-icon">📋</div><div class="t-name">Consultație ortodontică</div></div>
       <div class="treatment-body"><p>Examinare completă, analiză fotografică și cefalometrică, plan de tratament detaliat cu estimare de durată și cost. Consultație gratuită.</p><div class="treatment-price">Gratuit</div></div>
     </div>
   </div>
-  <div class="cta-banner">
+  <div class="cta-banner anim">
     <div class="cta-text"><h2>Vrei dinți drepți și aliniați?</h2><p>Consultație ortodontică gratuită · Rezultate garantate</p></div>
     <a href="tel:+37360000000" class="btn-white">📞 Sună acum</a>
   </div>
@@ -84,6 +84,56 @@
     <div class="footer-bottom"><span>© 2026 <strong>Parodontal Clinic</strong>. Toate drepturile rezervate.</span></div>
   </div>
 </footer>
-<script>const ham=document.getElementById('hamburger'),mob=document.getElementById('mobileNav');ham.addEventListener('click',()=>{ham.classList.toggle('open');mob.classList.toggle('open');document.body.style.overflow=mob.classList.contains('open')?'hidden':'';});mob.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{ham.classList.remove('open');mob.classList.remove('open');document.body.style.overflow='';}));</script>
+
+<!-- FLOATING BOOK BUTTON -->
+<button class="book-float" id="bookBtn">📅 Programează-te</button>
+
+<!-- BOOKING MODAL -->
+<div class="modal" id="bookModal">
+  <div class="modal-overlay" id="bookOverlay"></div>
+  <div class="modal-box">
+    <button class="modal-close" id="bookClose">✕</button>
+    <div class="modal-title">Programare online</div>
+    <div class="modal-sub">Completează formularul și te contactăm în cel mai scurt timp.</div>
+    <form id="bookForm">
+      <div class="form-row">
+        <div class="form-group">
+          <label>Nume *</label>
+          <input type="text" placeholder="Ion Popescu" required>
+        </div>
+        <div class="form-group">
+          <label>Telefon *</label>
+          <input type="tel" placeholder="+373 6XX XXX XXX" required>
+        </div>
+      </div>
+      <div class="form-group">
+        <label>Serviciu dorit</label>
+        <select>
+          <option value="">— Selectează serviciul —</option>
+          <option>Consultație gratuită</option>
+          <option>Terapie dentară</option>
+          <option>Estetică dentară / Albire</option>
+          <option>Chirurgie orală</option>
+          <option>Implantologie</option>
+          <option>Protetică dentară</option>
+          <option>Ortodonție</option>
+          <option>Igienă profesională</option>
+          <option>Altul</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label>Data preferată</label>
+        <input type="date">
+      </div>
+      <div class="form-group">
+        <label>Mesaj (opțional)</label>
+        <textarea placeholder="Descrie pe scurt problema sau întrebarea ta..."></textarea>
+      </div>
+      <button type="submit" class="form-submit">Trimite cererea →</button>
+    </form>
+  </div>
+</div>
+
+<script src="app.js"></script>
 </body>
 </html>

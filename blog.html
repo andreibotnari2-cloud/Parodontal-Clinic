@@ -124,7 +124,7 @@
   </div>
 
   <div style="margin-top:48px">
-    <div class="cta-banner">
+    <div class="cta-banner anim">
       <div class="cta-text"><h2>Ai o întrebare pentru medicii noștri?</h2><p>Programează o consultație gratuită și primești răspunsuri personalizate</p></div>
       <a href="tel:+37360000000" class="btn-white">📞 Sună acum</a>
     </div>
@@ -142,6 +142,56 @@
     <div class="footer-bottom"><span>© 2026 <strong>Parodontal Clinic</strong>. Toate drepturile rezervate.</span></div>
   </div>
 </footer>
-<script>const ham=document.getElementById('hamburger'),mob=document.getElementById('mobileNav');ham.addEventListener('click',()=>{ham.classList.toggle('open');mob.classList.toggle('open');document.body.style.overflow=mob.classList.contains('open')?'hidden':'';});mob.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{ham.classList.remove('open');mob.classList.remove('open');document.body.style.overflow='';}));</script>
+
+<!-- FLOATING BOOK BUTTON -->
+<button class="book-float" id="bookBtn">📅 Programează-te</button>
+
+<!-- BOOKING MODAL -->
+<div class="modal" id="bookModal">
+  <div class="modal-overlay" id="bookOverlay"></div>
+  <div class="modal-box">
+    <button class="modal-close" id="bookClose">✕</button>
+    <div class="modal-title">Programare online</div>
+    <div class="modal-sub">Completează formularul și te contactăm în cel mai scurt timp.</div>
+    <form id="bookForm">
+      <div class="form-row">
+        <div class="form-group">
+          <label>Nume *</label>
+          <input type="text" placeholder="Ion Popescu" required>
+        </div>
+        <div class="form-group">
+          <label>Telefon *</label>
+          <input type="tel" placeholder="+373 6XX XXX XXX" required>
+        </div>
+      </div>
+      <div class="form-group">
+        <label>Serviciu dorit</label>
+        <select>
+          <option value="">— Selectează serviciul —</option>
+          <option>Consultație gratuită</option>
+          <option>Terapie dentară</option>
+          <option>Estetică dentară / Albire</option>
+          <option>Chirurgie orală</option>
+          <option>Implantologie</option>
+          <option>Protetică dentară</option>
+          <option>Ortodonție</option>
+          <option>Igienă profesională</option>
+          <option>Altul</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label>Data preferată</label>
+        <input type="date">
+      </div>
+      <div class="form-group">
+        <label>Mesaj (opțional)</label>
+        <textarea placeholder="Descrie pe scurt problema sau întrebarea ta..."></textarea>
+      </div>
+      <button type="submit" class="form-submit">Trimite cererea →</button>
+    </form>
+  </div>
+</div>
+
+<script src="app.js"></script>
 </body>
 </html>
