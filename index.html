@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+<meta name="theme-color" content="#2563A8">
+<title>Parodontal Clinic — Stomatologie Chișinău</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@700;900&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --primary:#2563A8;
+  --primary2:#1a4f8a;
+  --accent:#00C2A8;
+  --ink:#0F1C2E;
+  --ink3:#6B7A8D;
+  --bg:#F4F8FC;
+  --white:#FFFFFF;
+  --border:#D6E4F0;
+  --r:14px;
+  --rs:9px;
+}
+html,body{overflow-x:hidden}
+body{font-family:'Manrope',sans-serif;background:var(--bg);color:var(--ink);font-size:15px;line-height:1.5}
+
+/* HEADER */
+.hdr{background:var(--white);border-bottom:1px solid var(--border);display:flex;align-items:center;justify-content:space-between;padding:0 20px;height:58px;position:sticky;top:0;z-index:100;box-shadow:0 2px 12px rgba(0,0,0,.06)}
+.logo{font-family:'Exo 2',sans-serif;font-size:18px;font-weight:900;color:var(--ink);text-decoration:none;letter-spacing:-.3px}
+.logo em{color:var(--primary);font-style:normal}
+.hdr-phone{display:flex;align-items:center;gap:6px;background:var(--primary);border-radius:8px;padding:8px 14px;color:#fff;text-decoration:none;font-family:'Exo 2',sans-serif;font-size:14px;font-weight:900;white-space:nowrap}
+
+/* HERO */
+.hero{background:linear-gradient(135deg,#0F1C2E 0%,#1a3a6b 100%);padding:56px 20px 48px;text-align:center;position:relative;overflow:hidden}
+.hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at top,rgba(37,99,168,.3) 0%,transparent 70%);pointer-events:none}
+.hero-badge{display:inline-block;background:rgba(0,194,168,.15);border:1px solid rgba(0,194,168,.4);border-radius:20px;padding:5px 14px;font-size:12px;font-weight:700;color:var(--accent);letter-spacing:.5px;margin-bottom:16px;position:relative;z-index:1}
+.hero-title{font-family:'Exo 2',sans-serif;font-size:32px;font-weight:900;color:#fff;letter-spacing:-.5px;line-height:1.15;position:relative;z-index:1}
+.hero-title em{color:var(--accent);font-style:normal}
+.hero-sub{font-size:14px;color:rgba(255,255,255,.65);margin-top:12px;position:relative;z-index:1;max-width:360px;margin-left:auto;margin-right:auto}
+.hero-btns{display:flex;gap:10px;justify-content:center;margin-top:24px;position:relative;z-index:1;flex-wrap:wrap}
+.btn-primary{background:var(--primary);color:#fff;font-family:'Exo 2',sans-serif;font-size:15px;font-weight:900;padding:13px 24px;border-radius:var(--rs);text-decoration:none;border:none;cursor:pointer}
+.btn-outline{background:transparent;color:#fff;font-family:'Exo 2',sans-serif;font-size:15px;font-weight:700;padding:13px 24px;border-radius:var(--rs);text-decoration:none;border:2px solid rgba(255,255,255,.3)}
+
+/* PAGE */
+.page{max-width:520px;margin:0 auto;padding:32px 16px 80px}
+
+/* SECTION TITLE */
+.stitle{font-family:'Exo 2',sans-serif;font-size:22px;font-weight:900;letter-spacing:-.4px;margin-bottom:6px;line-height:1.2}
+.stitle em{font-style:normal;color:var(--primary)}
+.sdesc{font-size:13px;color:var(--ink3);margin-bottom:20px;line-height:1.6}
+
+/* SERVICES */
+.services{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:32px}
+.srv-card{background:var(--white);border:1px solid var(--border);border-radius:var(--r);padding:18px 14px;text-align:center;transition:box-shadow .2s}
+.srv-card:hover{box-shadow:0 4px 20px rgba(37,99,168,.12)}
+.srv-icon{font-size:32px;margin-bottom:10px}
+.srv-name{font-family:'Exo 2',sans-serif;font-size:13px;font-weight:800;color:var(--ink);line-height:1.3}
+.srv-price{font-size:12px;color:var(--primary);font-weight:700;margin-top:4px}
+
+/* WHY */
+.why-list{margin-bottom:32px}
+.why-item{display:flex;align-items:flex-start;gap:14px;padding:14px 0;border-bottom:1px solid var(--border)}
+.why-item:last-child{border-bottom:none}
+.why-icon{font-size:28px;min-width:40px;text-align:center}
+.why-title{font-family:'Exo 2',sans-serif;font-size:14px;font-weight:800;color:var(--ink);margin-bottom:2px}
+.why-desc{font-size:12px;color:var(--ink3);line-height:1.5}
+
+/* DOCTORS */
+.doctors{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:32px}
+.doc-card{background:var(--white);border:1px solid var(--border);border-radius:var(--r);padding:18px 14px;text-align:center}
+.doc-avatar{width:64px;height:64px;border-radius:50%;background:linear-gradient(135deg,var(--primary),var(--accent));display:flex;align-items:center;justify-content:center;font-size:26px;margin:0 auto 12px}
+.doc-name{font-family:'Exo 2',sans-serif;font-size:13px;font-weight:900;color:var(--ink)}
+.doc-spec{font-size:11px;color:var(--ink3);margin-top:3px}
+.doc-exp{font-size:11px;color:var(--primary);font-weight:700;margin-top:4px}
+
+/* REVIEWS */
+.review-card{background:var(--white);border:1px solid var(--border);border-radius:var(--r);padding:16px;margin-bottom:12px}
+.review-stars{color:#F59E0B;font-size:13px;margin-bottom:6px}
+.review-text{font-size:13px;color:#444;line-height:1.6;margin-bottom:8px}
+.review-author{font-size:12px;color:var(--ink3);font-weight:600}
+
+/* CTA */
+.cta{background:linear-gradient(135deg,var(--primary),var(--primary2));border-radius:var(--r);padding:24px 20px;text-align:center;margin-bottom:16px}
+.cta-title{font-family:'Exo 2',sans-serif;font-size:20px;font-weight:900;color:#fff;margin-bottom:6px}
+.cta-sub{font-size:13px;color:rgba(255,255,255,.8);margin-bottom:18px}
+.cta-btn{display:inline-block;background:#fff;color:var(--primary);font-family:'Exo 2',sans-serif;font-size:15px;font-weight:900;padding:13px 30px;border-radius:var(--rs);text-decoration:none}
+
+/* FOOTER */
+footer{background:var(--ink);color:rgba(255,255,255,.5);text-align:center;padding:20px 16px;font-size:12px}
+footer strong{color:#fff}
+</style>
+</head>
+<body>
+
+<header class="hdr">
+  <a href="#" class="logo">Parodontal<em>.Clinic</em></a>
+  <a href="tel:+37360000000" class="hdr-phone">📞 Programare</a>
+</header>
+
+<div class="hero">
+  <div class="hero-badge">✦ Clinică stomatologică Chișinău</div>
+  <h1 class="hero-title">Zâmbetul tău,<br><em>grija noastră</em></h1>
+  <p class="hero-sub">Tratament parodontal profesionist. Echipament modern, medici cu experiență, prețuri accesibile.</p>
+  <div class="hero-btns">
+    <a href="tel:+37360000000" class="btn-primary">Programează-te acum</a>
+    <a href="#servicii" class="btn-outline">Serviciile noastre</a>
+  </div>
+</div>
+
+<div class="page">
+
+  <!-- SERVICII -->
+  <h2 class="stitle" id="servicii">Serviciile <em>noastre</em></h2>
+  <p class="sdesc">Oferim o gamă completă de tratamente stomatologice și parodontale.</p>
+  <div class="services">
+    <div class="srv-card">
+      <div class="srv-icon">🦷</div>
+      <div class="srv-name">Tratament parodontal</div>
+      <div class="srv-price">de la 500 lei</div>
+    </div>
+    <div class="srv-card">
+      <div class="srv-icon">✨</div>
+      <div class="srv-name">Albire profesională</div>
+      <div class="srv-price">de la 1200 lei</div>
+    </div>
+    <div class="srv-card">
+      <div class="srv-icon">🔬</div>
+      <div class="srv-name">Igienă dentară</div>
+      <div class="srv-price">de la 350 lei</div>
+    </div>
+    <div class="srv-card">
+      <div class="srv-icon">🏥</div>
+      <div class="srv-name">Implant dentar</div>
+      <div class="srv-price">de la 8000 lei</div>
+    </div>
+    <div class="srv-card">
+      <div class="srv-icon">😬</div>
+      <div class="srv-name">Aparat dentar</div>
+      <div class="srv-price">de la 15000 lei</div>
+    </div>
+    <div class="srv-card">
+      <div class="srv-icon">💊</div>
+      <div class="srv-name">Consultație gratuită</div>
+      <div class="srv-price">Gratuit</div>
+    </div>
+  </div>
+
+  <!-- DE CE NOI -->
+  <h2 class="stitle">De ce să ne <em>alegi</em></h2>
+  <p class="sdesc">Peste 10 ani de experiență în stomatologie.</p>
+  <div class="why-list">
+    <div class="why-item">
+      <div class="why-icon">🏆</div>
+      <div>
+        <div class="why-title">Medici certificați internațional</div>
+        <div class="why-desc">Echipa noastră a urmat cursuri de specializare în România, Germania și Italia.</div>
+      </div>
+    </div>
+    <div class="why-item">
+      <div class="why-icon">⚡</div>
+      <div>
+        <div class="why-title">Echipament de ultimă generație</div>
+        <div class="why-desc">Radiografie digitală, laser dentar, sterilizare completă după fiecare pacient.</div>
+      </div>
+    </div>
+    <div class="why-item">
+      <div class="why-icon">💰</div>
+      <div>
+        <div class="why-title">Prețuri transparente</div>
+        <div class="why-desc">Nicio taxă ascunsă. Deviz complet înainte de orice tratament.</div>
+      </div>
+    </div>
+    <div class="why-item">
+      <div class="why-icon">😌</div>
+      <div>
+        <div class="why-title">Fără durere</div>
+        <div class="why-desc">Anestezie modernă. Tratament confortabil chiar și pentru pacienții anxioși.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- MEDICI -->
+  <h2 class="stitle">Medicii <em>noștri</em></h2>
+  <p class="sdesc">Profesioniști dedicați sănătății tale dentare.</p>
+  <div class="doctors">
+    <div class="doc-card">
+      <div class="doc-avatar">👩‍⚕️</div>
+      <div class="doc-name">Dr. Ana Rusu</div>
+      <div class="doc-spec">Parodontologie</div>
+      <div class="doc-exp">12 ani experiență</div>
+    </div>
+    <div class="doc-card">
+      <div class="doc-avatar">👨‍⚕️</div>
+      <div class="doc-name">Dr. Ion Moraru</div>
+      <div class="doc-spec">Implantologie</div>
+      <div class="doc-exp">9 ani experiență</div>
+    </div>
+    <div class="doc-card">
+      <div class="doc-avatar">👩‍⚕️</div>
+      <div class="doc-name">Dr. Maria Cojocaru</div>
+      <div class="doc-spec">Ortodonție</div>
+      <div class="doc-exp">7 ani experiență</div>
+    </div>
+    <div class="doc-card">
+      <div class="doc-avatar">👨‍⚕️</div>
+      <div class="doc-name">Dr. Vasile Popa</div>
+      <div class="doc-spec">Chirurgie dentară</div>
+      <div class="doc-exp">15 ani experiență</div>
+    </div>
+  </div>
+
+  <!-- RECENZII -->
+  <h2 class="stitle">Ce spun <em>pacienții</em></h2>
+  <p class="sdesc">Peste 2000 de pacienți mulțumiți.</p>
+
+  <div class="review-card">
+    <div class="review-stars">★★★★★</div>
+    <div class="review-text">„Am venit cu frică, am plecat cu zâmbetul pe buze. Dr. Ana este extraordinară — profesionistă și foarte atentă. Recomand cu toată inima!"</div>
+    <div class="review-author">— Cristina M., Chișinău</div>
+  </div>
+
+  <div class="review-card">
+    <div class="review-stars">★★★★★</div>
+    <div class="review-text">„Am făcut implant dentar și sunt extrem de mulțumit. Procedura a fost nedureroasă, prețul corect. Acum 6 luni și totul perfect."</div>
+    <div class="review-author">— Alexandru T., Chișinău</div>
+  </div>
+
+  <div class="review-card">
+    <div class="review-stars">★★★★★</div>
+    <div class="review-text">„Cel mai bun cabinet stomatologic din Chișinău. Igienă impecabilă, personal amabil, rezultate excelente. Nu merg altundeva."</div>
+    <div class="review-author">— Elena V., Bălți</div>
+  </div>
+
+  <!-- CTA -->
+  <div class="cta">
+    <div class="cta-title">Programează-te astăzi</div>
+    <div class="cta-sub">Consultație gratuită · Luni–Sâmbătă 09:00–19:00</div>
+    <a href="tel:+37360000000" class="cta-btn">📞 Sună acum</a>
+  </div>
+
+</div>
+
+<footer>
+  <strong>Parodontal Clinic</strong> · Chișinău, Moldova<br>
+  <span style="margin-top:4px;display:block">© 2026 Toate drepturile rezervate</span>
+</footer>
+
+</body>
+</html>
