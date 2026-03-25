@@ -72,7 +72,7 @@ function initModal() {
   function openModal() {
     modal.classList.add('open');
     document.body.style.overflow = 'hidden';
-    setTimeout(() => modal.querySelector('.modal-box').classList.add('in'), 10);
+    requestAnimationFrame(() => requestAnimationFrame(() => modal.querySelector('.modal-box').classList.add('in')));
   }
   function closeModal() {
     modal.querySelector('.modal-box').classList.remove('in');
