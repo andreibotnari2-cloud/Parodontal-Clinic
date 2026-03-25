@@ -51,6 +51,98 @@
 </div>
 
 <div class="page">
+
+  <!-- INTRO SECTION -->
+  <div class="photo-section anim" style="margin-bottom:64px">
+    <div class="photo-wrap">
+      <img src="img-terapie.jpg" alt="Terapie dentară Parodontal Clinic" onerror="this.parentElement.style.background='linear-gradient(135deg,#1E3A6E,#2B7DC8)';this.style.display='none'">
+    </div>
+    <div class="photo-content">
+      <h2>Ce este <em>terapia dentară?</em></h2>
+      <p>Terapia dentară reprezintă totalitatea tratamentelor conservatoare destinate menținerii și restaurării sănătății dinților naturali. Scopul principal este salvarea dintelui, evitând extracția ori de câte ori este posibil.</p>
+      <p>La Parodontal Clinic folosim tehnici minim invazive și materiale de ultimă generație — obturații compozite estetice, tratamente de canal cu aparatură rotativă și microscopie dentară pentru rezultate precise și durabile.</p>
+      <ul style="list-style:none;margin-bottom:20px">
+        <li style="padding:6px 0;font-size:14px;color:#2D3F55;display:flex;gap:10px"><span style="color:#2B7DC8;font-weight:900">✓</span> Tratamente nedureroase cu anestezie modernă</li>
+        <li style="padding:6px 0;font-size:14px;color:#2D3F55;display:flex;gap:10px"><span style="color:#2B7DC8;font-weight:900">✓</span> Materiale biocompatibile certificate europene</li>
+        <li style="padding:6px 0;font-size:14px;color:#2D3F55;display:flex;gap:10px"><span style="color:#2B7DC8;font-weight:900">✓</span> Consultație și radiografie gratuită</li>
+        <li style="padding:6px 0;font-size:14px;color:#2D3F55;display:flex;gap:10px"><span style="color:#2B7DC8;font-weight:900">✓</span> Rezultate estetice și funcționale garantate</li>
+      </ul>
+      <a href="tel:+37307876688" class="btn-primary">📞 Programează-te gratuit</a>
+    </div>
+  </div>
+
+  <!-- FORM + INFO SECTION -->
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:32px;margin-bottom:64px;align-items:start" class="anim terapie-form-grid">
+    <div>
+      <h2 class="stitle" style="margin-bottom:8px">Programare <em>rapidă</em></h2>
+      <p style="font-size:14px;color:#6B7A8D;margin-bottom:24px;line-height:1.7">Completează formularul și te contactăm în cel mai scurt timp pentru a stabili o programare convenabilă.</p>
+      <form id="terapieForm" style="background:#fff;border:1px solid #D6E4F0;border-radius:14px;padding:28px">
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:16px">
+          <div class="form-group" style="margin:0">
+            <label>Nume *</label>
+            <input type="text" placeholder="Ion Popescu" required>
+          </div>
+          <div class="form-group" style="margin:0">
+            <label>Telefon *</label>
+            <input type="tel" placeholder="078 XXX XXX" required>
+          </div>
+        </div>
+        <div class="form-group">
+          <label>Serviciu dorit</label>
+          <select>
+            <option value="">— Selectează —</option>
+            <option>Tratamentul cariei</option>
+            <option>Tratament de canal</option>
+            <option>Igienă profesională</option>
+            <option>Tratament parodontal</option>
+            <option>Consultație gratuită</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Mesaj (opțional)</label>
+          <textarea placeholder="Descrie problema ta..." style="min-height:80px"></textarea>
+        </div>
+        <button type="submit" class="form-submit" onclick="this.textContent='Se trimite...';this.disabled=true;setTimeout(()=>{this.closest('form').innerHTML='<div style=text-align:center;padding:20px><div style=font-size:40px>✅</div><h3 style=font-family:Exo 2,sans-serif;margin:10px 0>Mulțumim!</h3><p style=color:#6B7A8D>Te contactăm în curând.</p></div>'},1200);return false">Trimite cererea →</button>
+      </form>
+    </div>
+    <div>
+      <h2 class="stitle" style="margin-bottom:20px">De ce să alegi <em>terapia</em> la noi?</h2>
+      <div style="display:flex;flex-direction:column;gap:16px">
+        <div style="background:#fff;border:1px solid #D6E4F0;border-radius:12px;padding:18px;display:flex;gap:14px;align-items:flex-start">
+          <span style="font-size:28px">🔬</span>
+          <div>
+            <div style="font-family:'Exo 2',sans-serif;font-weight:900;font-size:15px;color:#0F1C2E;margin-bottom:4px">Microscopie dentară</div>
+            <div style="font-size:13px;color:#6B7A8D;line-height:1.6">Tratamente de canal sub microscop pentru precizie maximă și rezultate pe termen lung.</div>
+          </div>
+        </div>
+        <div style="background:#fff;border:1px solid #D6E4F0;border-radius:12px;padding:18px;display:flex;gap:14px;align-items:flex-start">
+          <span style="font-size:28px">😌</span>
+          <div>
+            <div style="font-family:'Exo 2',sans-serif;font-weight:900;font-size:15px;color:#0F1C2E;margin-bottom:4px">Fără durere</div>
+            <div style="font-size:13px;color:#6B7A8D;line-height:1.6">Anestezie locală modernă, eficientă chiar și pentru pacienții cu frică de dentist.</div>
+          </div>
+        </div>
+        <div style="background:#fff;border:1px solid #D6E4F0;border-radius:12px;padding:18px;display:flex;gap:14px;align-items:flex-start">
+          <span style="font-size:28px">⏱️</span>
+          <div>
+            <div style="font-family:'Exo 2',sans-serif;font-weight:900;font-size:15px;color:#0F1C2E;margin-bottom:4px">Ședințe eficiente</div>
+            <div style="font-size:13px;color:#6B7A8D;line-height:1.6">Respectăm programul tău. Tratamentele sunt planificate eficient pentru a minimiza numărul de vizite.</div>
+          </div>
+        </div>
+        <div style="background:#fff;border:1px solid #D6E4F0;border-radius:12px;padding:18px;display:flex;gap:14px;align-items:flex-start">
+          <span style="font-size:28px">💰</span>
+          <div>
+            <div style="font-family:'Exo 2',sans-serif;font-weight:900;font-size:15px;color:#0F1C2E;margin-bottom:4px">Prețuri transparente</div>
+            <div style="font-size:13px;color:#6B7A8D;line-height:1.6">Deviz complet înainte de orice tratament. Nicio surpriză la final.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <h2 class="stitle anim" style="margin-bottom:8px">Serviciile noastre de <em>terapie</em></h2>
+  <p style="font-size:14px;color:#6B7A8D;margin-bottom:32px" class="anim">Tratamente complete pentru sănătatea dinților tăi naturali.</p>
+
   <div class="treatment-grid">
     <div class="treatment-card anim">
       <div class="treatment-top"><div class="t-icon">🦷</div><div class="t-name">Tratamentul cariei</div></div>

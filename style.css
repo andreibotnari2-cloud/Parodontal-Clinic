@@ -263,6 +263,7 @@ footer{background:var(--ink);padding:52px 24px 24px}
   .page-hero-img{display:none}
 }
 @media(max-width:768px){
+  .terapie-form-grid{grid-template-columns:1fr!important}
   .nav,.hdr-phone{display:none}
   .hamburger{display:flex}
   .hero-inner{grid-template-columns:1fr}
