@@ -214,10 +214,43 @@
     </div>
   </div>
 
+  <!-- CAROUSEL POZE LUCRARI -->
+  <div style="margin-top:80px;margin-bottom:80px">
+    <h2 class="stitle anim" style="margin-bottom:30px">Lucrări realizate de <em>Dr. Muradu</em></h2>
+    
+    <div style="position:relative;margin-bottom:40px">
+      <div style="overflow:hidden;border-radius:14px;box-shadow:0 8px 32px rgba(0,0,0,.12)">
+        <div id="scrollCarousel" style="display:flex;gap:20px;padding:10px;overflow-x:auto;scroll-behavior:smooth;scroll-snap-type:x mandatory">
+          <div style="flex:0 0 100%;max-width:600px;min-height:400px;border-radius:10px;overflow:hidden;scroll-snap-align:start;background:#f0f0f0">
+            <img src="implant-muradu-1.jpg" alt="Lucrare Implant 1" style="width:100%;height:100%;object-fit:cover">
+          </div>
+          <div style="flex:0 0 100%;max-width:600px;min-height:400px;border-radius:10px;overflow:hidden;scroll-snap-align:start;background:#f0f0f0">
+            <img src="implant-muradu-2.jpg" alt="Lucrare Implant 2" style="width:100%;height:100%;object-fit:cover">
+          </div>
+          <div style="flex:0 0 100%;max-width:600px;min-height:400px;border-radius:10px;overflow:hidden;scroll-snap-align:start;background:#f0f0f0">
+            <img src="chirurgie-cazuri-1.jpg" alt="Lucrare Chirurgie 1" style="width:100%;height:100%;object-fit:cover">
+          </div>
+          <div style="flex:0 0 100%;max-width:600px;min-height:400px;border-radius:10px;overflow:hidden;scroll-snap-align:start;background:#f0f0f0">
+            <img src="chirurgie-cazuri-2.jpg" alt="Lucrare Chirurgie 2" style="width:100%;height:100%;object-fit:cover">
+          </div>
+        </div>
+      </div>
+      
+      <button style="position:absolute;left:10px;top:50%;transform:translateY(-50%);z-index:10;background:#fff;border:none;width:48px;height:48px;border-radius:50%;display:flex;align-items:center;justify-content:center;cursor:pointer;box-shadow:0 4px 12px rgba(0,0,0,.15);transition:all .2s;font-size:20px" onclick="document.getElementById('scrollCarousel').scrollBy({left:-600,behavior:'smooth'})" onmouseover="this.background='#f0f0f0'" onmouseout="this.background='#fff'">
+        ←
+      </button>
+      <button style="position:absolute;right:10px;top:50%;transform:translateY(-50%);z-index:10;background:#fff;border:none;width:48px;height:48px;border-radius:50%;display:flex;align-items:center;justify-content:center;cursor:pointer;box-shadow:0 4px 12px rgba(0,0,0,.15);transition:all .2s;font-size:20px" onclick="document.getElementById('scrollCarousel').scrollBy({left:600,behavior:'smooth'})" onmouseover="this.background='#f0f0f0'" onmouseout="this.background='#fff'">
+        →
+      </button>
+    </div>
+
+    <p style="text-align:center;font-size:13px;color:#6B7A8D;margin-bottom:60px">Glisează stânga-dreapta pentru mai multe cazuri →</p>
+  </div>
+
   <!-- GALLERY SECTION - CAZURI CLINICE -->
   <div style="margin-top:80px;margin-bottom:64px">
     <h2 class="stitle anim" style="margin-bottom:8px">Galeria cazurilor <em>clinice</em></h2>
-    <p style="font-size:14px;color:#6B7A8D;margin-bottom:32px" class="anim">Iată o selecție din lucrările noastre. Transformări care demonstrează expertiza Dr. Alexandru Muradu.</p>
+    <p style="font-size:14px;color:#6B7A8D;margin-bottom:32px" class="anim">Descrieri detaliate ale transformărilor. Cine are nevoie de mai multă informație.</p>
     
     <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px">
       <div class="gallery-item anim" style="background:#fff;border-radius:12px;overflow:hidden;box-shadow:0 4px 16px rgba(0,0,0,.08);cursor:pointer;transition:transform .3s">
