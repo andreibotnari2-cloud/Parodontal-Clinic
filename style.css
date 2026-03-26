@@ -264,6 +264,7 @@ footer{background:var(--ink);padding:52px 24px 24px}
 }
 @media(max-width:768px){
   .terapie-form-grid{grid-template-columns:1fr!important}
+  .chirurgie-form-grid{grid-template-columns:1fr!important}
   .nav,.hdr-phone{display:none}
   .hamburger{display:flex}
   .hero-inner{grid-template-columns:1fr}
@@ -279,6 +280,8 @@ footer{background:var(--ink);padding:52px 24px 24px}
   .blog-grid{grid-template-columns:1fr}
   .photo-section{grid-template-columns:1fr}
   .photo-section.reverse{direction:ltr}
+  .photo-wrap img{max-height:300px;object-fit:contain}
+  .doctor-section{grid-template-columns:1fr!important;gap:24px!important;padding:24px!important}
   .cta-banner{flex-direction:column;text-align:center;padding:36px 24px}
   .cta-text h2{font-size:22px}
   .footer-grid{grid-template-columns:1fr;gap:28px}
