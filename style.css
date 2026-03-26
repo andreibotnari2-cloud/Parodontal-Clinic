@@ -125,7 +125,7 @@ img{max-width:100%;display:block}
 .photo-section.reverse{direction:rtl}
 .photo-section.reverse>*{direction:ltr}
 .photo-wrap{position:relative}
-.photo-wrap img{width:100%;border-radius:20px;object-fit:cover;aspect-ratio:4/3;box-shadow:0 16px 48px rgba(0,0,0,.12)}
+.photo-wrap img{width:100%;border-radius:20px;object-fit:contain;aspect-ratio:auto;box-shadow:0 16px 48px rgba(0,0,0,.12)}
 .photo-wrap::before{content:'';position:absolute;inset:-8px -8px 8px 8px;border:2px solid var(--blue2);border-radius:22px;opacity:.3;pointer-events:none;z-index:-1}
 .photo-content h2{font-family:'Exo 2',sans-serif;font-size:30px;font-weight:900;letter-spacing:-.4px;margin-bottom:12px;line-height:1.2}
 .photo-content h2 em{font-style:normal;color:var(--blue)}
