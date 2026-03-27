@@ -280,8 +280,10 @@ footer{background:var(--ink);padding:52px 24px 24px}
   .blog-grid{grid-template-columns:1fr}
   .photo-section{grid-template-columns:1fr}
   .photo-section.reverse{direction:ltr}
-  .photo-wrap img{max-height:300px;object-fit:contain}
-  .doctor-section{grid-template-columns:1fr!important;gap:24px!important;padding:24px!important}
+  .photo-wrap img{height:220px;max-height:220px;object-fit:cover;object-position:center top}
+  .doctor-section{padding:24px!important}
+  .doctor-section>div{grid-template-columns:1fr!important;gap:20px!important}
+  .doctor-section>div>div:first-child img{height:260px!important;width:100%!important;object-fit:cover!important}
   .cta-banner{flex-direction:column;text-align:center;padding:36px 24px}
   .cta-text h2{font-size:22px}
   .footer-grid{grid-template-columns:1fr;gap:28px}
