@@ -2,41 +2,49 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://parodontalclinic.vercel.app/</loc>
+    <lastmod>2026-04-01</lastmod>
     <priority>1.0</priority>
     <changefreq>weekly</changefreq>
   </url>
   <url>
-    <loc>https://parodontalclinic.vercel.app/terapie.html</loc>
+    <loc>https://parodontalclinic.vercel.app/terapie</loc>
+    <lastmod>2026-04-01</lastmod>
     <priority>0.9</priority>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://parodontalclinic.vercel.app/estetica.html</loc>
+    <loc>https://parodontalclinic.vercel.app/estetica</loc>
+    <lastmod>2026-04-01</lastmod>
     <priority>0.9</priority>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://parodontalclinic.vercel.app/chirurgie.html</loc>
+    <loc>https://parodontalclinic.vercel.app/chirurgie</loc>
+    <lastmod>2026-04-01</lastmod>
     <priority>0.9</priority>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://parodontalclinic.vercel.app/implantologie.html</loc>
+    <loc>https://parodontalclinic.vercel.app/implantologie</loc>
+    <lastmod>2026-04-01</lastmod>
     <priority>0.9</priority>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://parodontalclinic.vercel.app/protetica.html</loc>
+    <loc>https://parodontalclinic.vercel.app/protetica</loc>
+    <lastmod>2026-04-01</lastmod>
     <priority>0.8</priority>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://parodontalclinic.vercel.app/ortodontie.html</loc>
+    <loc>https://parodontalclinic.vercel.app/ortodontie</loc>
+    <lastmod>2026-04-01</lastmod>
     <priority>0.8</priority>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://parodontalclinic.vercel.app/blog.html</loc>
+    <loc>https://parodontalclinic.vercel.app/blog</loc>
+    <lastmod>2026-04-01</lastmod>
     <priority>0.7</priority>
     <changefreq>weekly</changefreq>
   </url>

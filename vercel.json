@@ -1,0 +1,13 @@
+{
+  "cleanUrls": true,
+  "trailingSlash": false,
+  "redirects": [
+    { "source": "/terapie.html",       "destination": "/terapie",       "permanent": true },
+    { "source": "/estetica.html",      "destination": "/estetica",      "permanent": true },
+    { "source": "/chirurgie.html",     "destination": "/chirurgie",     "permanent": true },
+    { "source": "/implantologie.html", "destination": "/implantologie", "permanent": true },
+    { "source": "/protetica.html",     "destination": "/protetica",     "permanent": true },
+    { "source": "/ortodontie.html",    "destination": "/ortodontie",    "permanent": true },
+    { "source": "/blog.html",          "destination": "/blog",          "permanent": true }
+  ]
+}
